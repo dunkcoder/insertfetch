@@ -33,4 +33,4 @@ Assert.assertTrue(keyHolder.getKey().longValue() > 0);
 
 ##### To run JUnit Test green, config below places:
 	JdbcUtilTest.java setUpBeforeClass method
-	application-beans.xml.
+	application-beans.xml
