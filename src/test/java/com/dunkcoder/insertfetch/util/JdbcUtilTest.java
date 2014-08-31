@@ -17,7 +17,7 @@ public class JdbcUtilTest {
         String drive_class = "com.mysql.jdbc.Driver";
         String db_url = "jdbc:mysql://localhost:3306/test";
         String db_userid = "root";
-        String db_password = "passw0rd";
+        String db_password = "pa55w0rd";
         conn = JdbcUtil.getConnection(drive_class, db_url, db_userid, db_password);
     }
 

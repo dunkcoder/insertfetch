@@ -21,10 +21,10 @@
             <value>root</value>
         </property>
         <property name="password">
-            <value>passw0rd</value>
+            <value>pa55w0rd</value>
         </property>
     </bean>
-    <bean id="userDao" class="com.dunkcoder.tobaru.dao.UserDaoImpl">
+    <bean id="userDao" class="com.dunkcoder.insertfetch.dao.UserDaoImpl">
         <property name="dataSource" ref="dataSource" />
     </bean>
 
