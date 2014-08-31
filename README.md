@@ -5,7 +5,7 @@
 String insertSql = "insert into t_user (username) values('zhangsan')";
 PreparedStatement pstmt = conn.prepareStatement(insertSql, Statement.RETURN_GENERATED_KEYS);
 ```
-* Step2: Execute insertSql using statement 
+* Step2: Execute insertSql using statement
 
 ```java
 pstmt.executeUpdate();
@@ -31,6 +31,6 @@ jdbcTemplate.update(new PreparedStatementCreator() {
 Assert.assertTrue(keyHolder.getKey().longValue() > 0);
 ```
 
-##### To run JUnit Test green, config below places:
+##### For run JUnit Test a greenbar, config db parameters on below places:
 	JdbcUtilTest.java setUpBeforeClass method
-	application-beans.xml
+	application-beans.xml dataSource bean
